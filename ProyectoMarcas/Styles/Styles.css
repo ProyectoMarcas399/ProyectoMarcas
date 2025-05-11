@@ -1,0 +1,163 @@
+/*Estilos para ambas páginas*/
+
+body {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #1f4e79;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*Estilos para la encuesta*/
+
+/*Estilo del formulario*/
+form{
+    background-color: white;
+    padding: 30px;
+}
+
+form p {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin: 5px;
+}
+
+button {
+    color: white;
+    padding: 10px 20px;
+    margin: 15px 10px 0 0;
+    border: 1px solid black;
+    font-weight: bold;
+}
+/*Estilo del foot*/
+
+h6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: underline;
+}
+/*Fin del formulario*/
+
+/*Estilos para el index*/
+
+h4{
+    color: blue;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Ventajas {
+    color: green;
+    text-decoration-color: green;
+  }
+  
+  .Desventajas {
+    color: red;
+    text-decoration-color: red;
+  }
+
+/* Estilos para la tabla */
+select{
+    border: 2px solid black;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; 
+}
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/*Estilos de la lnea temporal*/
+.container {
+    margin: 50px;
+    width: 80%;
+}
+
+h5{
+    margin-bottom: 5px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.box {
+    margin-bottom: 10px;
+    position: relative
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 120%;
+    background: black;
+    left: -15px;
+    top: 10px;
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    left: -25px;
+    top: 10px;
+}
+
+/*Codigo de la carta*/
+.ContainerCard {
+    display: flex;
+    gap: 20px; 
+}
+
+.card {
+    margin: 16px 8px;
+    padding: 20px;
+    width: 300px;
+    height: auto; 
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    text-align: center; 
+    background-color: #f2f2f2;   
+}
+
+.card img {
+    display: block; 
+    margin: 0 auto; 
+    width: 40%;
+    height: 40%;  
+}

@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="Images/Icons/Icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="scripts/scripts.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+        <!-- Titulo de la página-->
+        <title>Test Cuidado Animal</title>
+  </head>
+
+  <body>
+  <h3 class="font-bold">Ayudanos a determinar si la gente sabe sobre cuidado animal rellenando el
+   siguiente test:</h3>
+
+   <form>
+    <ol>
+            <!--Primera pregunta-->
+        <li>
+            <p>1.¿Cuál de los siguientes signos puede indicar una parasitosis interna
+             en perros o gatos?</p>
+             <input type="radio" id="Pelo..." name="Preg1" value="Pelo...">
+             <label for="Pelo...">a) Pelo brillante y apetito elevado</label><br>
+
+             <input type="radio" id="Tos..." name="Preg1" value="Tos...">
+             <label for="Tos...">b)Tos persistente y jadeo</label><br>
+             
+             <input type="radio" id="Pérdida..." name="Preg1" value="Pérdida...">
+             <label for="Pérdida...">c)Pérdida de peso con apetito normal, vomitos, diarrea</label><br>
+
+             <input type="radio" id="Lamido..." name="Preg1" value="Lamido...">
+             <label for="Lamido...">d)Lamido excesivo de patas delanteras</label><br>
+        </li>
+
+            <!--Segunad Pregunta-->
+        <li>
+            <p>2.¿Qué función cumple el enriquecimiento ambiental en animales domésticos?</p>
+             <input type="radio" id="Duerman..." name="Preg2" value="Duerman...">
+             <label for="Duerman...">a)Permitir que duerman lo necesario</label><br>
+
+             <input type="radio" id="Estimular..." name="Preg2" value="Estimular...">
+             <label for="Estimular...">b)Estimular sus sentidos y reducir estres</label><br>
+             
+             <input type="radio" id="Coman..." name="Preg2" value="Coman...">
+             <label for="Coman...">c)Hacer que coman balanceado</label><br>
+
+             <input type="radio" id="Ejercicio..." name="Preg2" value="Ejercicio...">
+             <label for="Ejercicio...">d)Aumentar el ejercicio físico</label><br>
+        </li>
+
+            <!--Tercera pregunta-->
+        <li>
+            <p>3.¿Cuál es el intervalo de vacunación más común para la vacuna antirrábica en perros
+            y gatos adultos?</p>
+             <input type="radio" id="6Meses" name="Preg3" value="6Meses">
+             <label for="6Meses">a)Cada 6 meses</label><br>
+
+             <input type="radio" id="Anualmente" name="Preg3" value="Anualmente">
+             <label for="Anualmente">b)Anualmente</label><br>
+             
+             <input type="radio" id="5Años" name="Preg3" value="5Años">
+             <label for="5Años">c)Cada 5 años</label><br>
+
+             <input type="radio" id="1Vez" name="Preg3" value="1Vez">
+             <label for="1Vez">d)Solo una vez</label><br>
+        </li>
+
+            <!--Cuarta pregunta-->
+        <li>
+            <p>4.¿Qué tipo de alimentación es más adecuada para un hurón doméstico?</p>
+             <input type="radio" id="herviboros..." name="Preg4" value="herviboros...">
+             <label for="herviboros...">a)Comida para animales herviboros</label><br>
+
+             <input type="radio" id="Carbohidratos..." name="Preg4" value="Carbohidratos...">
+             <label for="Carbohidratos...">b)Dieta rica en carbohidratos y baja en proteinas</label><br>
+             
+             <input type="radio" id="Proteinas..." name="Preg4" value="Proteinas...">
+             <label for="Proteinas...">c)Dieta alta en proteinas animales y baja en 
+                                       carbohidratos</label><br>
+
+             <input type="radio" id="Frutas..." name="Preg4" value="Frutas...">
+             <label for="Frutas...">d)Solo frutas y verduras frescas</label><br>
+        </li>
+
+            <!--Quinta Pregunta-->
+        <li>
+            <p>5. ¿Cuál es el principal riesgo de suministrar medicamentos humanos a una mascota
+                 sin supervisión veterinaria?</p>
+             <input type="radio" id="NoEfecto..." name="Preg5" value="NoEfecto...">
+             <label for="NoEfecto...">a)No surgen efecto</label><br>
+
+             <input type="radio" id="Adicciones..." name="Preg5" value="Adicciones...">
+             <label for="Adicciones...">b)Pueden generar adicciones</label><br>
+             
+             <input type="radio" id="Tóxicos..." name="Preg5" value="Tóxicos...">
+             <label for="Tóxicos...">c)Podrían ser tóxicos y causar reacciones graves</label><br>
+
+             <input type="radio" id="Acostumbran..." name="Preg5" value="Acostumbran...">
+             <label for="Acostumbran...">d)La masctotas se acostumbran a ellas y no surge efecto</label><br>
+        </li>
+
+            <!--Sexta pregunta-->
+        <li>
+            <p>6.¿Cuál es la razón principal para realizar desparasitación externa regular en animales?</p>
+             <input type="radio" id="Olor..." name="Preg6" value="Olor...">
+             <label for="Olor...">a)Prevenir el mal olor</label><br>
+
+             <input type="radio" id="Contagios..." name="Preg6" value="Contagios...">
+             <label for="Contagios...">b)Evitar contagios de enfermedades</label><br>
+             
+             <input type="radio" id="Rasquen..." name="Preg6" value="Rasquen...">
+             <label for="Rasquen...">c)Hacer que no se rasquen</label><br>
+
+             <input type="radio" id="Mejorar..." name="Preg6" value="Mejorar...">
+             <label for="Mejorar...">d)Mejorar el brillo del pelaje</label><br>
+        </li>
+
+            <!--Septima pregunta-->
+        <li>
+            <p>7.¿Por qué es importante cortar las uñas a los gatos que viven exclusivamente
+                en interiores?</p>
+             <input type="radio" id="Crezcan..." name="Preg7" value="Crezcan...">
+             <label for="Crezcan...">a)Pra que no crezcan más</label><br>
+
+             <input type="radio" id="Muebles..." name="Preg7" value="Muebles...">
+             <label for="Muebles...">b)Para evitar daños a muebles</label><br>
+             
+             <input type="radio" id="Lesiones..." name="Preg7" value="Lesiones...">
+             <label for="Lesiones...">c)Para evitar que se enganchen y sufran lesiones</label><br>
+
+             <input type="radio" id="Caminen..." name="Preg7" value="Caminen...">
+             <label for="Caminen...">d)Para que caminen más rapido</label><br>
+        </li>
+
+            <!--Octava Pregunta-->
+        <li>
+            <p>8.¿Qué se debe hacer si se encuentra un animal herido en la calle?</p>
+             <input type="radio" id="Ignorarlo..." name="Preg8" value="Ignorarlo...">
+             <label for="Ignorarlo...">a)Ignorarlo</label><br>
+
+             <input type="radio" id="Llamar..." name="Preg8" value="Llamar...">
+             <label for="Llamar...">b)Llevarlo al veterinario o llamar a un centro de rescate</label><br>
+             
+             <input type="radio" id="Llevarlo..." name="Preg8" value="Llevarlo...">
+             <label for="Llevarlo...">c)Llevarlo a casa sin revisarlo</label><br>
+
+             <input type="radio" id="Comida..." name="Preg8" value="Comida...">
+             <label for="Comida...">d)Darle comida y dejarlo allí</label><br>
+        </li>
+
+            <!--Novena Pregunta-->
+        <li>
+            <p>9.¿Qué indica una mucosa oral pálida en un animal doméstico?</p>
+             <input type="radio" id="Hidratación..." name="Preg9" value="Hidratación...">
+             <label for="Hidratación...">a)Mala hidratación</label><br>
+
+             <input type="radio" id="Pelo..." name="Preg9" value="Pelo...">
+             <label for="Pelo...">b)Problemas digestivos</label><br>
+             
+             <input type="radio" id="Anemia..." name="Preg9" value="Anemia...">
+             <label for="Anemia...">c)Anemia o shock</label><br>
+
+             <input type="radio" id="Hambre..." name="Preg9" value="Hambre...">
+             <label for="Hambre...">d)Que necesita alimento</label><br>
+        </li>
+
+            <!--Decima pregunta-->
+        <li>
+            <p>10.¿Por qué es importante realizar una correcta socialización en la etapa temprana del
+               desarrollo de un cachorro?</p>
+             <input type="radio" id="Ladrar..." name="Preg10" value="Ladrar...">
+             <label for="Ladrar...">a)Para que aprenda a ladrar correctamente</label><br>
+
+             <input type="radio" id="Conducta..." name="Preg10" value="Conducta...">
+             <label for="Conducta...">b)Para prevenir problemas de conducta en la adultez</label><br>
+             
+             <input type="radio" id="Activo..." name="Preg10" value="Activo...">
+             <label for="Activo...">c)Para que se mantenga activo</label><br>
+
+             <input type="radio" id="Alergias..." name="Preg10" value="Alergias...">
+             <label for="Alergias...">d)Para que no desarrolle alergias</label><br>
+        </li>
+    </ol><br><br>
+
+    <button type="reset" class="bg-blue-500 hover:bg-blue-700 duration-300 font-semibold 
+     ease-in-out">Resetear</button>
+    <button type="button" class="bg-blue-500 hover:bg-blue-700 duration-300 font-semibold 
+     ease-in-out" id="validarRespuestas">Enviar</button><br>
+    <div id="resultado" class="mt-4 font-bold text-green-700"></div>
+
+   </form>
+   <footer>
+   <h6 class="text-gray-700  font-semibold">Para volver a la página principal
+    <a href="Index.html" title="Pagina Principal" class="text-blue-500 hover:text-blue-700 
+    duration-300 ease-in-out">
+    haga click aqui</a></h6>
+    </footer>
+  </body>
+  </html>
+
+
+

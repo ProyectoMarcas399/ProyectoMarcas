@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Images/Icons/Icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="scripts/scripts.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Cuidado Animal</title>
+</head>
+<body>
+
+    <h3 class="font-bold">Alimentación de Mascotas</h3>
+
+    <h4>¿Cómo puedo alimentar a mi mascota?</h4>
+    <p>Podemos ofrecerle a nuestras mascotas varios alimentos según sus necesidades.</p>
+
+    <!-- Lista sobre tipos de alimentos -->
+    <ol>
+        <li><strong>Comida Seca:</strong>
+            <ul>
+                <li><u class="Ventajas">Ventajas:</u> La comida seca es fácil de almacenar y puede mantenerse una gran cantidad de tiempo, además de mejorar la salud dental del animal.</li>
+                <li><u class="Desventajas">Desventajas:</u> La comida seca contiene poca cantidad de agua y puede causar deshidratación.</li>
+            </ul>
+        </li>
+        <li><img src="Images/Alimentación/comida-seca.jpg" alt="Comida Seca" width="250"></li>
+
+        <li><strong>Alimentos Húmedos:</strong>
+            <ul>
+                <li><u class="Ventajas">Ventajas:</u> La comida húmeda es suave y sabrosa, ideal para mascotas exigentes y con problemas dentales. Además, tiene un alto contenido de agua.</li>
+                <li><u class="Desventajas">Desventajas:</u> La comida húmeda suele ser costosa y es necesario mantenerla refrigerada.</li>
+            </ul>
+        </li>
+        <li><img src="Images/Alimentación/comida-humeda.jpg" alt="Comida Húmeda" width="250"></li>
+
+        <li><strong>Comida Cruda:</strong>
+            <ul>
+                <li><u class="Ventajas">Ventajas:</u> La comida cruda contiene alimentos naturales y puede mejorar el pelaje, energía y salud dental del animal.</li>
+                <li><u class="Desventajas">Desventajas:</u> Requiere manipulación e higiene cuidadosa para reducir el riesgo de contaminación bacteriana. Se necesita la supervisión de un profesional.</li>
+            </ul>
+        </li>
+        <li><img src="Images/Alimentación/comida-cruda.jpg" alt="Comida Cruda" width="250"></li>
+
+        <li><strong>Comida Casera:</strong>
+            <ul>
+                <li><u class="Ventajas">Ventajas:</u> Se tiene control total sobre los alimentos, ideal si tu mascota tiene alergias.</li>
+                <li><u class="Desventajas">Desventajas:</u> Puede ser difícil obtener un buen equilibrio nutricional. Se debe consultar con un experto, ya que algunos alimentos comunes son tóxicos para las mascotas.</li>
+            </ul>
+        </li>
+        <li><img src="Images/Alimentación/comida-casera.jpg" alt="Comida Casera" width="250"></li>
+    </ol>
+
+    <!--Tabla-->
+    <h4>¿Como debo alimentar a mi mascota según el tipo de animal?</h4>
+    <p>A continuación se mostrar auna tabla que muestra cuanta cantidad de cierta comida debes
+       darle a tu animal según su especie.</p><br>
+
+    <!-- Eleccion del animal -->
+    <label for="Seleccion">Selecciona un animal:</label>
+    <select id="Seleccion">
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="conejo">Conejo</option>
+        <option value="hamster">Hámster</option>
+        <option value="pajaro">Pájaro</option>
+        <option value="peces">Peces</option>
+    </select>
+
+    <!-- Tabla para mostrar la alimentación del animal -->
+    <table id="TablaAlimentacion">
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Alimento</th>
+                <th>Cantidad</th>
+                <th>Frecuencia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Se completan las lineas con javascript -->
+        </tbody>
+    </table>
+
+    <!-- Alimentación según la edad -->
+    <h4>¿Cómo debo alimentar a mi mascota según su edad?</h4>
+    <div class="container">
+        <h2 class="text-2xl font-bold text-gray-800">Alimentación según la edad</h2>
+
+        <div class="box">
+            <h5 class="font-semibold text-blue-500">Cachorros y Gatitos</h5>
+                <p>Metabolismo rápido. Alta necesidad de calorías, proteínas y grasas.</p>
+                <p>Requieren más calcio y fósforo para el desarrollo óseo y dental.</p>
+        </div>
+
+        <div class="box">
+            <h5 class="font-semibold text-blue-500">Adultos</h5>
+                <p>Necesidades calóricas estables. Se busca mantener el peso ideal.</p>
+                <p>Alimentos de calidad sin rellenos innecesarios son clave.</p>
+        </div>
+
+        <div class="box">
+            <h5 class="font-semibold text-blue-500">Senior</h5>
+                <p>Metabolismo más lento. Menor consumo calórico, más fibra.</p>
+                <p>Suplementos para articulaciones y antioxidantes para el cerebro.</p>
+        </div>
+    </div>
+
+    <!-- Alimentación peligrosa -->
+    <h4>¿Qué no debo darle a mi mascota?</h4>
+    <p>Hay alimentos que son peligrosos para las mascotas. Aquí algunos de ellos.</p>
+
+    <!-- Info sobre chocolate -->
+    <div class="ContainerCard">
+        <div class="card">
+            <h1 class="font-semibold text-blue-500">Chocolate</h1>
+            <p>Contiene teobromina, tóxica para perros y gatos. Puede causar vómitos, convulsiones y hasta la muerte.</p>
+            <img src="Images/Icons/chocolate.png" alt="Chocolate">
+        </div>
+
+          <!--Info sobre cebolla y ajo-->
+          <div class="card">
+          <h1 class="font-semibold text-blue-500">Cebolla y ajo</h1>
+          <p>Dañan los glóbulos rojos, provocando anemia y debilidad en las mascotas.</p>
+          <img src="Images/Icons/onion.png" alt="Cebolla">
+          </div>
+      
+          <!--Info sobre uvas y pasas-->
+          <div class="card">
+          <h1 class="font-semibold text-blue-500">Uvas y pasas</h1>
+          <p>Pueden causar insuficiencia renal aguda, incluso en pequeñas cantidades.</p>
+          <img src="Images/Icons/grape.png" alt="Cebolla">
+          </div>
+
+          <!--Info sobre alcohol-->
+          <div class="card">
+          <h1 class="font-semibold text-blue-500">Alcohol</h1>
+          <p>Altamente tóxico. Afecta el sistema nervioso central y puede ser letal para las mascotas.</p>
+          <img src="Images/Icons/liquor.png" alt="Alcohol">
+          </div>
+          </div>
+          
+          <!--Publicidad cuestionario-->
+          <h3>Ayudanos a recolectar información</h3>
+          <h6 class="text-gray-700  font-semibold">Desde AmantesDeLosAnimales.com queremos saber si 
+          la gente cuida de sus animales correctamente. Ayudanos rellenando el siguiente test 
+          <a href="EncuestaAnimales.html" title="EncuestaAnimales" class="text-blue-500
+           hover:text-blue-700 duration-300 ease-in-out">haciendo click aqui</a></h6>
+  </body>
+</html>
